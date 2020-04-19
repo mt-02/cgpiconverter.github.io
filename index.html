@@ -1,0 +1,107 @@
+<html>
+<head>
+    <title>cgpi-converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+        #example2 {
+            margin-top: 40px;
+  padding: 50px;
+    box-shadow: 5px 5px 11px rgba(113, 113,113, 15%);
+    background-color: black;
+    width: 55%;;
+}
+h2,label{
+    color: white;
+}
+body{
+    background-color:gray;
+}
+
+    </style>
+    <script language="javascript">
+        function addNumbers()
+        {
+                var val1 = parseFloat(document.getElementById("sem1").value);
+                var val2 = parseFloat(document.getElementById("sem2").value);
+                var val3 = parseFloat(document.getElementById("sem3").value);
+                var val4 = parseFloat(document.getElementById("sem4").value);
+                var val5 = parseFloat(document.getElementById("sem5").value);
+                var val6 = parseFloat(document.getElementById("sem6").value);
+                var val7 = parseFloat(document.getElementById("sem7").value);
+                var val8 = parseFloat(document.getElementById("sem8").value);
+                var ansD1 = document.getElementById("answer1");
+                var ansD2 = document.getElementById("answer2");
+                var ansD3 = document.getElementById("answer3");
+                var ansD4 = document.getElementById("answer4");
+                var ansD5 = document.getElementById("answer5");
+                var ansD6 = document.getElementById("answer6");
+                var ansD7= document.getElementById("answer7");
+                var ansD8 = document.getElementById("answer8");
+                ansD1.value = ((val1 / 1) - 0.75)*10;
+                ansD2.value = (((val1 + val2) / 2) - 0.75)*10;
+                ansD3.value = (((val1 + val2 + val3 ) / 3) - 0.75)*10;
+                ansD4.value = (((val1 + val2 + val3 + val4) / 4) - 0.75)*10;
+                ansD5.value = (((val1 + val2 + val3 + val4 + val5) / 5) - 0.75)*10;
+                ansD6.value = (((val1 + val2 + val3 + val4 + val5 + val6) / 6) - 0.75)*10;
+                ansD7.value = (((val1 + val2 + val3 + val4 + val5 + val6 + val7) / 7) - 0.75)*10;
+                ansD8.value = (((val1 + val2 + val3 + val4 + val5 + val6 + val7 + val8) / 8) - 0.75)*10;
+        }
+</script>
+    
+    <form><div class="container" id="example2">
+        <center><h2>CGPI TO % CONVERSION</h2></center>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Sem 1</label>
+            <input type="number" class="form-control" id="sem1" placeholder="Enter Sem 1 CGPI">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Sem 2</label>
+            <input type="number" class="form-control" id="sem2" placeholder="Enter Sem 2 CGPI">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Sem 3</label>
+            <input type="number" class="form-control" id="sem3" placeholder="Enter Sem 3 CGPI">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Sem 4</label>
+            <input type="number" class="form-control" id="sem4" placeholder="Enter Sem 4 CGPI">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Sem 5</label>
+            <input type="number" class="form-control" id="sem5" placeholder="Enter Sem 5 CGPI">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Sem 6</label>
+            <input type="number" class="form-control" id="sem6" placeholder="Enter Sem 6 CGPI">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Sem 7</label>
+            <input type="number" class="form-control" id="sem7" placeholder="Enter Sem 7 CGPI">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Sem 8</label>
+            <input type="number" class="form-control" id="sem8" placeholder="Enter Sem 8 CGPI">
+          </div>
+          <input type="button" name="Sumbit" class="btn btn-dark" value="Sumbit" onclick="javascript:addNumbers()"/><br><br>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Your Percentage is</span>
+            </div>
+            <input type="text" id="answer1" class="form-control" placeholder="sem1 percentage">
+            <input type="text" id="answer2" class="form-control" placeholder="sem2 percentage">
+            <input type="text" id="answer3" class="form-control" placeholder="sem3 percentage">
+            <input type="text" id="answer4" class="form-control" placeholder="sem4 percentage">
+            <input type="text" id="answer5" class="form-control" placeholder="sem5 percentage">
+            <input type="text" id="answer6" class="form-control" placeholder="sem6 percentage">
+            <input type="text" id="answer7" class="form-control" placeholder="sem7 percentage">
+            <input type="text" id="answer8" class="form-control" placeholder="sem8 percentage">
+          </div>
+        </div>
+        </div>
+    </form>
+    </body>
+    </html>
